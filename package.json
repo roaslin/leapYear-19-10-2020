@@ -1,0 +1,14 @@
+{
+    "name": "fizzbuzzkata",
+    "version": "1.0.0",
+    "description": "FizzBuzz kata",
+    "author": "roaslin",
+    "main": "fizzbuzz.js",
+    "scripts": {
+      "test": "jest --watchAll"
+    },
+    "dependencies": {
+      "nodemon": "^2.0.4",
+      "jest": "26.4.2"      
+    }
+  }
