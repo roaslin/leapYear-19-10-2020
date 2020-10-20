@@ -1,14 +1,14 @@
 function leapYear(number) {
 
-    if(number % 100 === 0 && number % 400 !== 0){
+    if(isDivisibleBy100(number) && !isDivisibleBy400(number)){
         return false;
     }
 
-    if(number % 4 === 0 && number % 100 !== 0){
+    if(isDivisibleBy4(number) && !isDivisibleBy100(number)){
         return true;
     }
 
-    if(number % 400 === 0){
+    if(isDivisibleBy400(number)){
         return true;
     }
 
@@ -16,3 +16,15 @@ function leapYear(number) {
 }
 
 module.exports = leapYear;
+
+function isDivisibleBy4(number) {
+    return number % 4 === 0;
+}
+
+function isDivisibleBy100(number) {
+    return number % 100 === 0;
+}
+
+function isDivisibleBy400(number) {
+    return number % 400 === 0;
+}
