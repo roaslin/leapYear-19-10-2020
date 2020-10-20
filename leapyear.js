@@ -1,5 +1,5 @@
 function leapYear(number) {
-    return !(number % 4 !== 0);
+    return number % 400 === 0;
 }
 
 module.exports = leapYear;
