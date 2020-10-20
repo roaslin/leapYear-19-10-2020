@@ -1,7 +1,5 @@
 const isLeapYear = require('./leapyear.js');
 
-// All years not divisible by 4 are NOT leap years (e.g. 2017, 2018, 2019).
-
 describe('leapYear should', ()=>{
     test('be divisible by 400', ()=>{
         expect(isLeapYear(1600)).toBe(true);
